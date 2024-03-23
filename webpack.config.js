@@ -1,13 +1,20 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 // we can't use ECMAScript here
 module.exports = {
     entry: './src/index.js',
     output: {
-        filename: 'bundler.js',
+        filename: 'bundler.[contenthash].js',
         path: path.resolve(__dirname, 'dist')
     },
-    mode: "none",
+    mode: "development",
+    devServer: {
+        static: {
+            directory: path.join(__dirname, 'dist'),
+          },
+          port: 9000,
+    },
     module: {
         rules: [
             // <-- combination of asset/resource + asset/inline -->
@@ -32,6 +39,16 @@ module.exports = {
                 test: /\.txt/,
                 type: 'asset/source'
             },
+            {
+                test: /\.(css|scss)/,
+                use: ['style-loader', 'css-loader', 'sass-loader']
+            }
         ]
-    }
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            title: 'react-scratch-app',
+            filename: 'index.html'
+        })
+    ]
 }
