@@ -1,0 +1,15 @@
+{
+  "name": "react-scratch-app",
+  "version": "1.0.0",
+  "private": true,
+  "repository": "https://github.com/kapilmogre1998/react-scratch-app.git",
+  "scripts": {
+    "build": "webpack"
+  },
+  "author": "kapilmogre1998",
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
+  }
+}
