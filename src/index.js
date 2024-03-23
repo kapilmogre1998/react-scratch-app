@@ -1,10 +1,9 @@
-import imgUrl from './swimming_pool.webp'
+import addWebpFile from "./addWebpFile";
+import addSvgFile from "./addSvgFile";
+import addTextFile from "./addTextFile";
+import addCSSFile from "./addCSSFile";
 
-const addImage = () => {
-    const el = document.createElement('img');
-    el.src = imgUrl;
-    const body = document.body;
-    body.appendChild(el);
-}
-
-addImage();
+addCSSFile();
+addTextFile();
+addSvgFile();
+addWebpFile();

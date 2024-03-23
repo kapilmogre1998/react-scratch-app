@@ -10,10 +10,28 @@ module.exports = {
     mode: "none",
     module: {
         rules: [
+            // <-- combination of asset/resource + asset/inline -->
             {
-                test: /\.(webp|png|jpg)$/,
-                type: "asset/resource"
-            }
+                test: /\.(webp|svg)$/,
+                type: "asset",
+                parser: {
+                    dataUrlCondition: {
+                      maxSize: 4 * 1024 // 4kb
+                    }
+                  }
+            },
+            // {
+            //     test: /\.(webp|png|jpg)$/,
+            //     type: "asset/resource"
+            // },
+            // {
+            //     test: /\.svg/,
+            //     type: 'asset/inline'
+            // },
+            {
+                test: /\.txt/,
+                type: 'asset/source'
+            },
         ]
     }
 }

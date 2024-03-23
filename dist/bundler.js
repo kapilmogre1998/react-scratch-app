@@ -3,9 +3,101 @@
 /******/ 	var __webpack_modules__ = ([
 /* 0 */,
 /* 1 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _swimming_pool_webp__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
+
+
+const addWebpFile = () => {
+    const el = document.createElement('img');
+    el.src = _swimming_pool_webp__WEBPACK_IMPORTED_MODULE_0__;
+    const body = document.body;
+    body.appendChild(el);
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (addWebpFile);
+
+/***/ }),
+/* 2 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "cb6e12876d0d7a4fb126.webp";
+
+/***/ }),
+/* 3 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _student_study_table_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4);
+
+
+const AddSvgFile = () => {
+    const el = document.createElement('img');
+    el.src = _student_study_table_svg__WEBPACK_IMPORTED_MODULE_0__;
+    const body = document.body;
+    body.appendChild(el);
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AddSvgFile);
+
+/***/ }),
+/* 4 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "449091783883cc636436.svg";
+
+/***/ }),
+/* 5 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _example_txt__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6);
+
+
+const addTextFile = () => {
+    const el = document.createElement('div');
+    el.innerHTML = _example_txt__WEBPACK_IMPORTED_MODULE_0__;
+    const body = document.body;
+    body.appendChild(el);
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (addTextFile);
+
+/***/ }),
+/* 6 */
+/***/ ((module) => {
+
+module.exports = "Hello World I am learning Webpack";
+
+/***/ }),
+/* 7 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+Object(function webpackMissingModule() { var e = new Error("Cannot find module './style.css'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+
+
+const addCSSFile = () => {
+    const el = document.createElement('div');
+    el.classList.add('text-color');
+    const body = document.body;
+    body.appendChild(el)
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (addCSSFile);
 
 /***/ })
 /******/ 	]);
@@ -35,6 +127,18 @@ module.exports = __webpack_require__.p + "cb6e12876d0d7a4fb126.webp";
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/global */
 /******/ 	(() => {
 /******/ 		__webpack_require__.g = (function() {
@@ -45,6 +149,11 @@ module.exports = __webpack_require__.p + "cb6e12876d0d7a4fb126.webp";
 /******/ 				if (typeof window === 'object') return window;
 /******/ 			}
 /******/ 		})();
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
@@ -86,17 +195,19 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _swimming_pool_webp__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _addWebpFile__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _addSvgFile__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
+/* harmony import */ var _addTextFile__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5);
+/* harmony import */ var _addCSSFile__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(7);
 
 
-const addImage = () => {
-    const el = document.createElement('img');
-    el.src = _swimming_pool_webp__WEBPACK_IMPORTED_MODULE_0__;
-    const body = document.body;
-    body.appendChild(el);
-}
 
-addImage();
+
+
+(0,_addCSSFile__WEBPACK_IMPORTED_MODULE_3__["default"])();
+(0,_addTextFile__WEBPACK_IMPORTED_MODULE_2__["default"])();
+(0,_addSvgFile__WEBPACK_IMPORTED_MODULE_1__["default"])();
+(0,_addWebpFile__WEBPACK_IMPORTED_MODULE_0__["default"])();
 })();
 
 /******/ })()
