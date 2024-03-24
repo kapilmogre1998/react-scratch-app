@@ -1,6 +1,8 @@
+$text-color: red;
+$text-font-size: 20px;
 
 .text-style{
-    color: red;
-    font-size: 20px;
+    color: $text-color;
+    font-size: $text-font-size;
     margin-bottom: 1rem;
 }
